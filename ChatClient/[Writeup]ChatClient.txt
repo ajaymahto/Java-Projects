@@ -1,0 +1,18 @@
+[ChatClient]
+
+The ChatClient Application is a simple Java Application, for communication between users on different devices. Using this application users can send and
+receive messages to and from the Server. There will be a Server which will accept connections by listening on one of its ports. Once a client connects,
+it will be able to communicate with Server as well as other users. In this simple version all messages will be broadcasted to Server as well as other users.
+
+Java is the primary tool used. Java sockets is used for connections, while swing is used for interface. In case of multiple clients, each of the client 
+connections is put on different threads which are synchronized. An arraylist is maintained for recording client information.
+
+Basic working : 
+
+First of all, the Server is started, which listens on a specified port, waiting for a client to connect. Then client logs into the Server, giving its name.
+The client can now send messages to the server and receive messages from it too. Other clients connecting also have the same functionalities. Clients can logout
+or ask for all connected client names anytime during their connection with the Server.
+Any of the Client-Server connection terminates if either of them terminates. While all connections end once the Server shuts down.
+
+
+ 
